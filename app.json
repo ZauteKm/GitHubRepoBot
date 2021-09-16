@@ -1,0 +1,45 @@
+{
+    "name": "This is Inline Channel Messages Search Bot by @ZauteKm",
+    "description": "This is Inline Channel Messages Search Bot by @ZauteKm Pyrogram by @tgbotsProject",
+    "keywords": [
+        "telegram",
+        "channel",
+        "messages",
+        "search",
+        "bot"
+    ],
+    "repository": "https://github.com/ZauteKm/Message-Search-Bot",
+    "website": "https://telegram.dog/ZauteKm",
+    "success_url": "https://t.me/BotzListBot",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org or @UseTGzKBot"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org or @UseTGzKBot"
+        },
+        "USER_SESSION_STRING": {
+            "description": "Get this from https://replit.com/@ZauteKm/GenerateStringSession#main.py"
+        },
+        "BOT_SESSION_NAME": {
+            "description": "Any Session Name for Bot."
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather"
+        },
+        "CHANNEL_ID": {
+            "description": "Channel ID for Searching Messages."
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
