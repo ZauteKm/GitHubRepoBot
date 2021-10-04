@@ -14,9 +14,9 @@ COPY requirements.txt /requirements.txt
 # Installing Requirements
 RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /Message-Search-Bot
-WORKDIR /Message-Search-Bot
+RUN mkdir /GitHubRepoBot
+WORKDIR /GitHubRepoBot
 COPY start.sh /start.sh
 
-# Running Message-Search-Bot
+# Running GitHubRepoBot
 CMD ["/bin/bash", "/start.sh"]
